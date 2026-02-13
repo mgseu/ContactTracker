@@ -1,0 +1,634 @@
+﻿:root {
+    --primary: #569bbe;
+    --primaryBorder: #676767;
+    --primaryThemeable: #569bbe;
+    --primaryBorderThemeable: #676767;
+    --themeTextColour: #ffffff;
+    --themeBackgroundColour: #f3f3f3;
+    --dialogRounding: 15px;
+    --contentBorder: 1px solid grey;
+    --keyInfoContainerMinHeight: 100px;
+}
+
+.invisible {
+    display: none;
+}
+
+.frameLoader {
+    height: 100%;
+    width: 100%;
+    height: 800px;
+    display: block;
+}
+
+#primaryFrame {
+    background-color: white;
+}
+
+.wt-popover {
+    border-radius: 10px;
+}
+
+.el-dialog {
+    border-radius: var(--dialogRounding) !important;
+}
+
+.el-dialog .el-row:nth-child(1) {
+    border-bottom: 1px solid var(--primary);
+    margin-bottom: 20px;
+}
+
+.el-dialog h2 {
+    color: var(--primary);
+}
+
+
+
+.wt-btns {
+    background-color: var(--primary) !important;
+    border-color: var(--primaryBorder) !important;
+    color: white !important;
+    border-radius: 25px;
+}
+
+
+
+.el-button {
+    background-color: white;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.el-button--primary {
+    background-color: var(--primary);
+    border-color: var(--primaryBorder);
+    color: white;
+}
+
+.el-input-group__prepend {
+    box-shadow: none;
+}
+
+.el-input-group__append, .el-input-group__prepend {
+    padding-left: 10px;
+    padding-right: 20px;
+    border-right: 1px solid var(--el-input-border-color);
+}
+
+.menuDivider {
+    font-size: 40px;
+    vertical-align: middle;
+    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.el-menu--horizontal > .el-menu-item.is-active, .el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title {
+    color: #569bbe !important;
+    border-bottom: 2px solid #676767 !important;
+    background-color: white !important;
+}
+
+.el-menu {
+    background-color: white;
+    text-transform: uppercase;
+    color: #676767 !important;
+}
+
+.el-menu-item {
+    background-color: white;
+    color: #676767 !important;
+}
+
+.el-menu--popup {
+    background-color: white;
+    color: #676767 !important;
+}
+
+.el-sub-menu {
+    
+    color: #676767 !important;
+}
+
+.el-menu--horizontal > .el-sub-menu .el-sub-menu__title {
+    color: #676767 !important;
+}
+
+.el-menu--horizontal > .el-sub-menu .el-sub-menu__title:hover {
+    color: white !important;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item:hover {
+    color: white !important;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item {
+    background-color: white;
+    color: #676767 !important;
+}
+
+.el-menu--horizontal > .el-row {
+    margin-left: 600px;
+}
+
+.el-menu--horizontal.el-menu {
+    border-bottom: hidden;
+}
+
+.searchActive {
+    width: 200px;
+}
+
+.searchInactive {
+    width: 70px;
+}
+
+.el-input__wrapper {
+}
+
+
+.searchButton {
+    height: 40px;
+}
+
+.searchButton input {
+}
+
+.searchButton .el-input-group__append {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.servicePill {
+    border-radius: 20px;
+    background-color: white;
+    height: 40px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.servicePill .el-image {
+    height: 30px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.userPill {
+    border-radius: 35px;
+    background-color: #676767;
+    color: white;
+    height: 35px;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    min-width: 35px;
+    justify-content: center;
+}
+
+.helpMenu {
+    color: #676767!important;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#helpDd {
+    margin-top: 10px;
+}
+
+.helpMenu .fa-circle-question {
+    font-size: 20px !important;
+    color: #676767 !important;
+    padding-left: 10px;
+    padding-right: 1px;
+}
+
+.helpMenu .HelpButtonText {
+    padding-left: 7px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 20px !important;
+    color: #676767 !important;
+}
+
+.helpMenu .HelpButtonText:hover {
+    text-decoration: underline;
+}
+
+.el-menu .el-divider {
+    height: 40px;
+}
+
+#app {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    background-color: transparent;
+    color: #5f5f5f;
+}
+
+body {
+    background-color: var(--themeBackgroundColour);
+}
+
+.homeContainer {
+    padding-top: 30px;
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+.homeContainer .el-header {
+}
+
+.headerBoard {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 280px;
+    z-index: -10000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.homeContainer .el-header .el-text {
+    font-size: 30px;
+    color: var(--themeTextColour);
+    text-transform: uppercase;
+}
+
+.contentBox {
+    background-color: white;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: var(--contentBorder);
+}
+
+.contentSection {
+    margin-top: 20px;
+}
+
+.contentSection .fa-refresh {
+    font-size: small;
+    cursor: pointer;
+}
+
+.taskSection .contentBox {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.messageTitle {
+    font-size: 30px;
+    color: #569bbe;
+    font-weight: bold;
+}
+
+.contentTitle {
+    font-size: 30px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.firstSection .contentTitle {
+    color: var(--themeTextColour);
+}
+
+.keyInformationContainer {
+    background-color: white;
+    min-height: var(--keyInfoContainerMinHeight);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px 20px 20px 40px;
+    border: var(--contentBorder);
+    box-shadow: var(--el-box-shadow-light);
+}
+
+    .keyInformationContainer span.el-text {
+        align-self: start;
+    }
+
+
+.keyInformation .contentBox {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.keyInformation .contentBox h5 {
+    color: var(--primary);
+}
+
+
+.keyInfoAction {
+    display: inline-block;
+}
+
+.tileContainer {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.menuTile {
+    background-color: white;
+    height: 100%;
+    min-width: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: var(--contentBorder);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: var(--el-box-shadow-light);
+}
+
+.tileTitle {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: black !important;
+}
+
+    .tileTitle i {
+        font-size: 35px;
+        color: black !important;
+        padding-right: 5px;
+    }
+
+.tileTitle .el-image img {
+    max-height: 60px;
+    padding-right: 7px;
+}
+
+.tileTitle .el-text {
+    font-size: 24px;
+    font-weight: normal;
+    color: black !important;
+    font-family: "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    max-width: 100px;
+}
+
+.tileSubtitle {
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.tileItems {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    clear: both;
+}
+
+.el-row.tileItem {
+    width: 400px;
+    justify-content: flex-end;
+}
+
+.spanText {
+    display: none;
+}
+
+.spanText.disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+
+.adminItem {
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.nonadminItem {
+    padding-right: 18px;
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.tileItemSpan {
+    width: 90%;
+}
+
+.logoImage {
+    padding: 5px;
+    display: flex;
+}
+
+.logoImage img {
+    max-height: 50px;
+    max-width: 200px;
+    height: auto;
+    align-self: center;
+}
+
+button.giveFeebdack {
+    background-color: transparent;
+    color: var(--themeTextColour);
+    border-color: var(--themeTextColour);
+    border-radius: 7px;
+    margin-left: 10px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.header .el-divider {
+    margin-top: 10px;
+    border-top-color: var(--primaryBorderThemeable);
+}
+
+.profile .myOrganisation {
+    font-size: smaller;
+    color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile .myUsername {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile .myRole {
+    font-size: smaller;
+    color: #569bbe;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+.passwordError {
+    color: var(--el-color-danger);
+    font-size: 12px;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+.notaskList {
+    margin-left: 50px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.notaskList .taskListIcon {
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.notaskList ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.taskList {
+    margin-left: 50px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.taskList .taskListIcon {
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.taskList .el-button {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.taskList .el-row {
+    /*height: 50px;*/
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.taskList .el-row .el-text {
+    /*margin-left: 30px*/
+}
+
+.taskList ul {
+    list-style-type: none;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+
+.taskList .taskDescription {
+    margin-right: 20px;
+    min-width: 25%;
+}
+
+button.dismiss {
+}
+
+.releaseNotesContainer {
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: transparent;
+}
+
+.releaseNotesContainer .el-row {
+    width: 100%;
+    height: 100%;
+}
+
+.releaseNotesContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-link-style {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 90%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 4px 4px 0 0;
+    width: 90%;
+    font-size: 16px;
+    font-family: "Helvetica", nimbus-sans, sans-serif;
+    font-weight: normal;
+}
+
+.btn-link-style:hover {
+    color: white;
+    background-color: #569bbe;
+}
+
+.btn-link-style-disabled {
+    display: inline-block;
+    background-color: white;
+    color: grey;
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 90%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 4px 4px 0 0;
+    width: 90%;
+    font-size: 16px;
+    font-family: "Helvetica", nimbus-sans, sans-serif;
+}
+
+.btn-link-style-disabled:hover {
+    color: white;
+    background-color: grey;
+}
+
+.el-col:has(.menuTile) {
+    min-width: 200px;
+    max-width: 450px;
+    flex-basis: auto;
+}
+
+.mainBackgroundImage {
+    background-image: url('https://www.imgroup.co.uk/wp-content/uploads/2024/09/IML_Isuzu_GWMORA_SUBARU.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.el-row, .el-dialog, .wt-popover {
+    font-family: "Helvetica", nimbus-sans, sans-serif;
+    ;
+}
+
+.el-main {
+    --el-main-padding: 20px 20px 40px 20px;
+}
